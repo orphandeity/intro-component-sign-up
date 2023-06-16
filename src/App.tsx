@@ -1,35 +1,24 @@
+import SignupForm from './components/signupForm'
+
 function App() {
   return (
-    <div className="flex h-screen flex-col bg-fm-red bg-mobile p-4 lg:grid lg:grid-cols-2 lg:place-content-center lg:bg-desktop">
-      <div className="flex flex-col justify-center text-white">
-        <h1 className="text-4xl font-bold">Learn to code by watching others</h1>
+    <main className="desktop:mx-40 desktop:my-0 desktop:flex desktop:h-screen desktop:max-w-full desktop:items-center desktop:justify-center desktop:gap-11 mx-auto mb-16 mt-[88px] max-h-screen max-w-sm space-y-16 px-6 ">
+      <div className="desktop:flex desktop:flex-col desktop:justify-center desktop:space-y-3 desktop:text-left max-w-[525px] space-y-4 text-center">
+        <h1>Learn to code by watching others</h1>
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
-      <div className="space-y-4">
-        <div className="w-full rounded-lg bg-fm-purple p-4 text-white shadow-lg">
+      <div className="desktop:w-[540px] space-y-6">
+        <div className="drop-shadow-custom rounded-lg bg-fm-purple px-16 py-4 text-center text-[0.9375rem]">
           <b>Try it free 7 days</b> then $20/mo. thereafter
         </div>
 
-        <form className="flex flex-col gap-4 rounded-lg bg-white p-8 shadow-lg">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Password" />
-
-          <button className="rounded-md bg-fm-green px-4 py-3 uppercase text-white">
-            Claim your free trial
-          </button>
-
-          <small>
-            By clicking the button, you are agreeing to our Terms and Services
-          </small>
-        </form>
+        <SignupForm />
       </div>
-    </div>
+    </main>
   )
 }
 

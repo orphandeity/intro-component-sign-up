@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins desktop:bg-desktop bg-fm-red bg-mobile text-white;
+  }
+
+  h1 {
+    @apply desktop:text-5xl desktop:leading-[55px] text-3xl font-bold;
+  }
+
+  p {
+    @apply font-medium leading-[26px];
+  }
+
+  input {
+    @apply placeholder:text-fm-gray w-full rounded-md border px-5 py-4 text-sm font-semibold text-black focus:border-fm-purple focus:outline-none;
+  }
+
+  .errorMessage {
+    @apply text-right text-[11px] italic text-fm-red;
+  }
+}
